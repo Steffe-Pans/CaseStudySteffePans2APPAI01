@@ -35,6 +35,16 @@ namespace test
             CountryRepository countryRepository = new CountryRepository();
             // insert code in database
             countryRepository.InsertCountry(covid);
+            // api key
+            string userApiKey = "";
+            // api
+            ApiRepository apiRepository = new ApiRepository(userApiKey);
+            List<Api> list = apiRepository.GetApiByCountries(covid);
+          //foreach (var word in list)
+          //  {
+          //      txtInfo.Text =  word.Country + word.Confirmed + word.Critical +word.Deaths +word.Recovered;
+          //  }
+
         }
     }
 }
