@@ -39,8 +39,7 @@ namespace CaseStudy.DAL
                 HttpResponseMessage response = client.Send(request);
                 using (var reader = new StreamReader(response.Content.ReadAsStream()))
                 {
-                    Api api = JsonSerializer.Deserialize<Api>(reader.ReadToEnd());
-                    apiResults.Add(api);
+                    apiResults = JsonSerializer.Deserialize<List<Api>>(reader.ReadToEnd());
                 }
                 return apiResults;
             }

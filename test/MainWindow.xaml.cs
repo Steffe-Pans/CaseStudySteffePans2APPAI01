@@ -36,14 +36,15 @@ namespace test
             // insert code in database
             countryRepository.InsertCountry(covid);
             // api key
-            string userApiKey = "";
+            string userApiKey = "1dfcbc5119msh976e680d3bb9a79p10c5d2jsn7b0d3c163136";
             // api
             ApiRepository apiRepository = new ApiRepository(userApiKey);
             List<Api> list = apiRepository.GetApiByCountries(covid);
-          //foreach (var word in list)
-          //  {
-          //      txtInfo.Text =  word.Country + word.Confirmed + word.Critical +word.Deaths +word.Recovered;
-          //  }
+          foreach (var word in list)
+           {
+               txtInfo.Text =  "Country:  " + word.Country  + "\n" + "Bevestigde gevallen:  " + word.Confirmed + "\n" +
+                    "Kritische gevallen:  " + word.Critical + "\n" + "Doden:  " + word.Deaths + "\n" + "Herstelde gevallen  " + word.Recovered;
+             }
 
         }
     }
