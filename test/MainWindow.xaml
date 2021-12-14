@@ -1,0 +1,17 @@
+﻿<Window x:Class="test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test"
+        mc:Ignorable="d"
+        Title="Covid data - Case study" Height="635" Width="800">
+    <Grid>
+        <Label x:Name="lblLandcode" Content="Landcode&#xD;&#xA;" HorizontalAlignment="Left" Margin="44,90,0,0" VerticalAlignment="Top" FontSize="22" Height="56" Width="109"/>
+        <TextBox x:Name="txtLandcode" HorizontalAlignment="Left" Margin="206,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Height="50"/>
+        <TextBlock x:Name="txtInfo" HorizontalAlignment="Left" Height="419" Margin="44,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="457" FontSize="18"/>
+        <Button x:Name="btnSubmit" Content="Indienen" HorizontalAlignment="Left" Margin="600,429,0,0" VerticalAlignment="Top" Height="60" Width="120" Click="btnSubmit_Click"/>
+        <Label Content="Covid Data" HorizontalAlignment="Left" Margin="299,10,0,0" VerticalAlignment="Top" FontSize="40" FontFamily="Constantia" Height="59" Width="202"/>
+
+    </Grid>
+</Window>
