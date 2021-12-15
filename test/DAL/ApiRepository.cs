@@ -24,27 +24,26 @@ namespace CaseStudy.DAL
         {
             List<Api> apiResults = new List<Api>();
 
-            
-                var client = new HttpClient();
-                var request = new HttpRequestMessage
-                {
-                    Method = HttpMethod.Get,
-                    RequestUri = new Uri("https://covid-19-data.p.rapidapi.com/country/code?code=" + covid.Code),
-                    Headers =
+
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri("https://covid-19-data.p.rapidapi.com/country/code?code=" + covid.Code),
+                Headers =
     {
         { "x-rapidapi-host", "covid-19-data.p.rapidapi.com" },
         { "x-rapidapi-key", _apiKey },
     },
-                };
-                HttpResponseMessage response = client.Send(request);
-                using (var reader = new StreamReader(response.Content.ReadAsStream()))
-                {
-                    apiResults = JsonSerializer.Deserialize<List<Api>>(reader.ReadToEnd());
-                }
-                return apiResults;
+            };
+            HttpResponseMessage response = client.Send(request);
+            using (var reader = new StreamReader(response.Content.ReadAsStream()))
+            {
+                apiResults = JsonSerializer.Deserialize<List<Api>>(reader.ReadToEnd());
             }
-            
+            return apiResults;
         }
-    
-}
 
+    }
+
+}
