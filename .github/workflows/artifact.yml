@@ -20,4 +20,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
           name: artifact
-          path: .\test\win-x64\CaseStudy.exe
+          path: .\test\win-x64\
