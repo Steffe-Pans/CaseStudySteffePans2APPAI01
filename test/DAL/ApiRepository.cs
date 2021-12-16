@@ -12,7 +12,6 @@ namespace CaseStudy.DAL
 {
     class ApiRepository
     {
-        private static readonly HttpClient _client = new HttpClient();
         private string _apiKey;
 
         public ApiRepository(string apiKey)

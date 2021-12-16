@@ -7,8 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="1_mdosfNhm7Lmp20b8LEW7tQ.png" />
+    <None Remove="EsWNSrJXYAUxovj.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1_mdosfNhm7Lmp20b8LEW7tQ.png" />
+    <Resource Include="EsWNSrJXYAUxovj.jpg" />
   </ItemGroup>
 
 </Project>

@@ -7,11 +7,17 @@
         mc:Ignorable="d"
         Title="Covid data - Case study" Height="635" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Label x:Name="lblLandcode" Content="Landcode&#xD;&#xA;" HorizontalAlignment="Left" Margin="44,90,0,0" VerticalAlignment="Top" FontSize="22" Height="56" Width="109" FontFamily="Constantia"/>
         <TextBox x:Name="txtLandcode" HorizontalAlignment="Left" Margin="206,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Height="50" FontFamily="Leelawadee" FontSize="20"/>
         <TextBlock x:Name="txtInfo" HorizontalAlignment="Left" Height="419" Margin="44,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="457" FontSize="18"/>
-        <Button x:Name="btnSubmit" Content="Indienen" HorizontalAlignment="Left" Margin="589,474,0,0" VerticalAlignment="Top" Height="88" Width="151" Click="btnSubmit_Click" FontSize="24" FontFamily="Constantia" BorderBrush="#FF191BF0" Background="#FFCBC5C5"/>
-        <Label Content="Covid Data" HorizontalAlignment="Left" Margin="299,10,0,0" VerticalAlignment="Top" FontSize="40" FontFamily="Constantia" Height="59" Width="202"/>
+        <Button x:Name="btnSubmit" Content="Indienen" HorizontalAlignment="Left" Margin="601,527,0,0" VerticalAlignment="Top" Height="59" Width="108" Click="btnSubmit_Click" FontSize="24" FontFamily="Constantia" BorderBrush="#FF191BF0" Background="#FF979797"/>
+
+        <Label Content="Covid Data" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="40" FontFamily="Constantia" Height="59" Width="202"/>
+        <Image HorizontalAlignment="Left" Height="378" Margin="511,40,0,0" VerticalAlignment="Top" Width="293" Source="/EsWNSrJXYAUxovj.jpg"/>
+        <Button x:Name="btnClear" Content="Wissen" HorizontalAlignment="Left" Margin="601,440,0,0" VerticalAlignment="Top" Height="59" Width="108" Click="btnClear_Click" FontFamily="Constantia" FontSize="24" Background="#FF979797" BorderBrush="#FF191BF0"/>
 
     </Grid>
 </Window>
