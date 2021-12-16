@@ -7,17 +7,15 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-
+  publish:
     runs-on: windows
-
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET Core 5.0
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-    - name: Upload WebApp1 Build Artifact
+    - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
           name: artifact
